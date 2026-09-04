@@ -24,6 +24,7 @@ Confirm metadata against the publisher record. Use these primary sources:
 | `./check_library.py` | Validate `all.bib`. |
 | `./check_library.py PATH` | Validate another BibTeX file. |
 | `./doi2bib.py DOI` | Fetch, clean, and append a Crossref record. |
+| `./export_bibliography.py PAPER OUTPUT` | Create a reduced bibliography for a paper. |
 | `./format_library.sh` | Normalize the full library with BibTool, then validate it. |
 | `make check` | Run the library validator. |
 | `make test` | Run the Python test suite. |
@@ -143,5 +144,5 @@ Enable recorded conflict resolution for repeated stack rebases:
 git config rerere.enabled true
 ```
 
-Add tests for new parser, validator, or importer behavior.
+Add tests for new parser, validator, importer, or exporter behavior.
 Use realistic input and protect a distinct failure mode with each test.

@@ -37,11 +37,12 @@ Copy `all.bib` into that tree before submission instead of using an external pat
 | `bibtex_tools.py` | Provides the parser used by the Python tools. |
 | `format_library.sh` | Runs BibTool safely and then validates the result. |
 | `doi2bib.py` | Gets and cleans a DOI record, maps its venue, creates its key, and appends it. |
+| `export_bibliography.py` | Creates a standalone bibliography with only the entries that a paper cites. |
 | `crossref_abbreviation_map.txt` | Maps Crossref venue names to local macro names. |
 | `all_bib_doc.tex` | Renders every entry for visual review. |
 | `Makefile` | Provides the build, validation, formatting, and cleanup targets. |
 | `pyproject.toml` and `uv.lock` | Define a dependency-free Python environment for `uv`. |
-| `tests/` | Covers important parser, validator, and DOI-import behavior. |
+| `tests/` | Covers the parser, validator, DOI importer, and bibliography exporter. |
 | `.gitignore` | Excludes LaTeX output and local scratch files. |
 | `.github/workflows/library.yml` | Validates the current tree and every commit in a pull request. |
 
@@ -170,6 +171,38 @@ make
 ```
 
 The command uses `latexmk -pdf` and writes `all_bib_doc.pdf`.
+
+## Create a submission bibliography
+
+Create a reduced bibliography before an arXiv or conference submission:
+
+```sh
+./export_bibliography.py ../paper/main.tex ../paper/submission.bib
+```
+
+The exporter follows local `\input`, `\include`, and `\subfile` commands.
+It reads common LaTeX, natbib, and biblatex citation commands.
+It ignores citations in LaTeX comments.
+
+The output contains the cited entries and the venue macros that those entries use.
+The exporter also includes entries referenced through `crossref`, `xref`, or `xdata` fields.
+It stops if a citation key or an included source file is missing.
+
+The exporter does not replace an existing output file by default.
+Use `--force` to replace a previous export:
+
+```sh
+./export_bibliography.py --force ../paper/main.tex ../paper/submission.bib
+```
+
+Use `--library` for another library that obeys the rules of this repository:
+
+```sh
+./export_bibliography.py --library path/to/library.bib main.tex submission.bib
+```
+
+The exporter scans source text and does not expand custom LaTeX macros.
+Inspect the reduced file and build the submission after each export.
 
 ## Stacked pull requests
 
