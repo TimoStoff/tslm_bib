@@ -1,0 +1,771 @@
+% =============================================================================
+% Venue macros for the TSLM BibTeX library.
+%
+% Abbreviations follow the IEEE reference style, even for venues that are not
+% IEEE. Before adding a macro, check:
+%   - https://abbrv.jabref.org/journals/journal_abbreviations_ieee.txt
+%   - https://www.ieee.org/content/dam/ieee-org/ieee/web/org/conferences/
+%     style_references_manual.pdf
+% Keep the groups below sorted the way they are, and keep the macro name short
+% because it is also the venue suffix of every citation key (Langer25arxiv).
+% =============================================================================
+
+% JOURNALS
+% - machine learning
+@STRING{jmlr    = "J. Mach. Learn. Res." }
+@STRING{tmlr    = "Trans. Mach. Learn. Res." }
+@STRING{pami    = "{IEEE} Trans. Pattern Anal. Mach. Intell." }
+@STRING{tnnls   = "{IEEE} Trans. Neural Netw. Learn. Syst." }
+@STRING{ijcv    = "Int. J. Comput. Vis." }
+@STRING{ml      = "Mach. Learning" }
+@STRING{nn      = "Neural Netw." }
+@STRING{neco    = "Neural Computation" }
+% - time series, data mining, and databases
+@STRING{dmkd    = "Data Min. Knowl. Discov." }
+@STRING{tkde    = "{IEEE} Trans. Knowl. Data Eng." }
+@STRING{pvldb   = "Proc. {VLDB} Endowment" }
+@STRING{vldbj   = "The {VLDB} J." }
+@STRING{tods    = "{ACM} Trans. Database Syst." }
+@STRING{ijf     = "Int. J. Forecasting" }
+@STRING{jasa    = "J. Am. Statistical Assoc." }
+@STRING{jas     = "{IEEE/CAA} J. Autom. Sinica" }
+@STRING{tsp     = "{IEEE} Trans. Signal Process." }
+% - language and speech
+@STRING{cl      = "Computational Linguistics" }
+@STRING{tacl    = "Trans. Assoc. Computational Linguistics" }
+@STRING{taslp   = "{IEEE/ACM} Trans. Audio, Speech, Language Process." }
+% - health, biomedical, and sensing
+@STRING{tbme    = "{IEEE} Trans. Biomed. Eng." }
+@STRING{jbhi    = "{IEEE} J. Biomed. Health Inform." }
+@STRING{npjdm   = "npj Digit. Med." }
+@STRING{jamia   = "J. Am. Medical Inform. Assoc." }
+@STRING{natmed  = "Nature Medicine" }
+@STRING{natbme  = "Nature Biomed. Eng." }
+@STRING{lancetdh= "The Lancet Digital Health" }
+@STRING{physmeas= "Physiol. Meas." }
+@STRING{imwut   = "Proc. {ACM} Interact. Mob. Wearable Ubiquitous Technol.
+                  (IMWUT)" }
+% - general science
+@STRING{nature  = "Nature" }
+@STRING{science = "Science" }
+@STRING{natmi   = "Nature Mach. Intell." }
+@STRING{natcomm = "Nature Comm." }
+@STRING{scidata = "Sci. Data" }
+@STRING{pnas    = "Proc. Nat. Acad. Sci." }
+% - computing and systems
+@STRING{cacm    = "Commun. {ACM}" }
+@STRING{acmcs   = "{ACM} Comput. Surveys" }
+@STRING{tois    = "{ACM} Trans. Inf. Syst." }
+@STRING{ieee    = "Proc. {IEEE}" }
+@STRING{computer= "{IEEE} Computer" }
+
+% CONFERENCES
+% - machine learning
+@STRING{icml    = "Proc. Int. Conf. Mach. Learning (ICML)" }
+@STRING{icmlw   = "Int. Conf. Mach. Learning Workshops (ICMLW)" }
+@STRING{nips    = "Conf. Neural Inf. Process. Syst. (NeurIPS)" }
+@STRING{nipsdb  = "Conf. Neural Inf. Process. Syst. Datasets and Benchmarks
+                  Track" }
+@STRING{nipsw   = "Conf. Neural Inf. Process. Syst. Workshops (NeurIPSW)" }
+@STRING{iclr    = "Int. Conf. Learn. Representations (ICLR)" }
+@STRING{iclrw   = "Int. Conf. Learn. Representations Workshops (ICLRW)" }
+@STRING{aistats = "Int. Conf. Artificial Intell. Statistics (AISTATS)" }
+@STRING{colm    = "Conf. Language Modeling (COLM)" }
+@STRING{aaai    = "{AAAI} Conf. Artificial Intell." }
+@STRING{ijcai   = "Int. Joint Conf. Artificial Intell. (IJCAI)" }
+@STRING{uai     = "Conf. Uncertainty in Artificial Intell. (UAI)" }
+@STRING{ijcnn   = "Int. Joint Conf. Neural Netw. (IJCNN)" }
+% - natural language processing and speech
+@STRING{acl     = "Annu. Meeting Assoc. Computational Linguistics (ACL)" }
+@STRING{emnlp   = "Conf. Empirical Methods Natural Language Process. (EMNLP)" }
+@STRING{naacl   = "Conf. North American Chapter Assoc. Computational
+                  Linguistics (NAACL)" }
+@STRING{coling  = "Int. Conf. Computational Linguistics (COLING)" }
+@STRING{interspeech = "INTERSPEECH" }
+% - computer vision
+@STRING{cvpr    = "{IEEE} Conf. Comput. Vis. Pattern Recog. (CVPR)" }
+@STRING{cvprw   = "{IEEE} Conf. Comput. Vis. Pattern Recog. Workshops (CVPRW)" }
+@STRING{iccv    = "Int. Conf. Comput. Vis. (ICCV)" }
+@STRING{eccv    = "Eur. Conf. Comput. Vis. (ECCV)" }
+@STRING{wacv    = "{IEEE} Winter Conf. Appl. Comput. Vis. (WACV)" }
+@STRING{bmvc    = "British Mach. Vis. Conf. (BMVC)" }
+% - data mining, databases, and information retrieval
+@STRING{kdd     = "{ACM} SIGKDD Int. Conf. Knowl. Discovery and Data Mining
+                  (KDD)" }
+@STRING{icdm    = "{IEEE} Int. Conf. Data Mining (ICDM)" }
+@STRING{sdm     = "{SIAM} Int. Conf. Data Mining (SDM)" }
+@STRING{icde    = "{IEEE} Int. Conf. Data Eng. (ICDE)" }
+@STRING{sigmod  = "{ACM} SIGMOD Int. Conf. Manage. Data" }
+@STRING{vldb    = "Int. Conf. Very Large Data Bases (VLDB)" }
+@STRING{cikm    = "{ACM} Int. Conf. Inf. Knowl. Manage. (CIKM)" }
+@STRING{wsdm    = "{ACM} Int. Conf. Web Search and Data Mining (WSDM)" }
+@STRING{sigir   = "{ACM} SIGIR Conf. Research and Develop. Inf. Retrieval" }
+@STRING{www     = "The Web Conf. (WWW)" }
+% - health and biomedical
+@STRING{mlhc    = "Mach. Learning for Healthcare Conf. (MLHC)" }
+@STRING{chil    = "{ACM} Conf. Health, Inference, and Learning (CHIL)" }
+@STRING{miccai  = "Int. Conf. Medical Image Comput. Comput.-Assist.
+                  Intervention (MICCAI)" }
+@STRING{embc    = "Annu. Int. Conf. {IEEE} Eng. Medicine Biology Soc. (EMBC)" }
+@STRING{cinc    = "Computing in Cardiology (CinC)" }
+@STRING{amia    = "{AMIA} Annu. Symp." }
+% - signal processing, sensing, and human-computer interaction
+@STRING{icassp  = "{IEEE} Int. Conf. Acoust., Speech, Signal Process.
+                  (ICASSP)" }
+@STRING{ubicomp = "{ACM} Int. Joint Conf. Pervasive and Ubiquitous Computing
+                  (UbiComp)" }
+@STRING{percom  = "{IEEE} Int. Conf. Pervasive Computing and Comm. (PerCom)" }
+@STRING{sensys  = "{ACM} Conf. Embedded Networked Sensor Syst. (SenSys)" }
+@STRING{ipsn    = "{ACM/IEEE} Int. Conf. Inf. Process. Sensor Netw. (IPSN)" }
+@STRING{chi     = "{ACM} Conf. Human Factors in Computing Syst. (CHI)" }
+@STRING{oceans  = "{MTS/IEEE} OCEANS Conf." }
+
+% PREPRINTS AND PUBLISHERS
+@STRING{arxiv   = "ar{X}iv e-prints" }
+@STRING{openreview = "OpenReview" }
+@STRING{pmlr    = "Proc. Mach. Learning Research (PMLR)" }
+@STRING{mit     = "The MIT Press, Cambridge, MA" }
+
+@Article{Alexandrov20jmlr,
+  author        = {Alexander Alexandrov and Konstantinos Benidis and Michael
+                  Bohlke-Schneider and Valentin Flunkert and Jan Gasthaus and
+                  Tim Januschowski and Danielle C. Maddix and Syama Rangapuram
+                  and David Salinas and Jasper Schulz and Lorenzo Stella and Ali
+                  Caner T{\"u}rkmen and Yuyang Wang},
+  title         = {{GluonTS}: Probabilistic and Neural Time Series Modeling in
+                  {Python}},
+  journal       = jmlr,
+  year          = 2020,
+  volume        = 21,
+  number        = 116,
+  pages         = {1--6},
+  url           = {http://jmlr.org/papers/v21/19-820.html}
+}
+
+@Article{Ansari24arxiv,
+  author        = {Abdul Fatir Ansari and Lorenzo Stella and Caner Turkmen and
+                  Xiyuan Zhang and Pedro Mercado and Huibin Shen and Oleksandr
+                  Shchur and Syama Syndar Rangapuram and Sebastian Pineda Arango
+                  and Shubham Kapoor and Jasper Zschiegner and Danielle C.
+                  Maddix and Michael W. Mahoney and Kari Torkkola and Andrew
+                  Gordon Wilson and Michael Bohlke-Schneider and Yuyang Wang},
+  title         = {{Chronos}: Learning the Language of Time Series},
+  journal       = arxiv,
+  year          = 2024,
+  month         = mar,
+  primaryclass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2403.07815},
+  arxivid       = {2403.07815}
+}
+
+@Article{Ansari25arxiv,
+  author        = {Abdul Fatir Ansari and Oleksandr Shchur and Jaris K{\"u}ken
+                  and Andreas Auer and Boran Han and Pedro Mercado and Syama
+                  Sundar Rangapuram and Huibin Shen and Lorenzo Stella and
+                  Xiyuan Zhang and Mononito Goswami and Shubham Kapoor and
+                  Danielle C. Maddix and Pablo Guerron and Tony Hu and Junming
+                  Yin and Nick Erickson and Prateek Mutalik Desai and Hao Wang
+                  and Huzefa Rangwala and George Karypis and Yuyang Wang and
+                  Michael Bohlke-Schneider},
+  title         = {{Chronos-2}: From Univariate to Universal Forecasting},
+  journal       = arxiv,
+  year          = 2025,
+  month         = oct,
+  primaryclass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2510.15821},
+  arxivid       = {2510.15821}
+}
+
+@InProceedings{Arnrich24iclrw,
+  author        = {Bert Arnrich and Edward Choi and Jason Fries and Matthew
+                  McDermott and Jungwoo Oh and Tom Pollard and Nigam Shah and
+                  Ethan Steinberg and Michael Wornow and Robin van de Water},
+  title         = {Medical Event Data Standard ({MEDS}): Facilitating Machine
+                  Learning for Health},
+  booktitle     = iclrw,
+  year          = 2024,
+  note          = {Workshop on Learning from Time Series for Health},
+  url           = {https://iclr.cc/virtual/2024/23574}
+}
+
+@Article{Bagnall18arxiv,
+  author        = {Anthony Bagnall and Hoang Anh Dau and Jason Lines and Michael
+                  Flynn and James Large and Aaron Bostrom and Paul Southam and
+                  Eamonn Keogh},
+  title         = {The {UEA} Multivariate Time Series Classification Archive,
+                  2018},
+  journal       = arxiv,
+  year          = 2018,
+  month         = nov,
+  primaryclass  = {cs.LG},
+  url           = {https://arxiv.org/abs/1811.00075},
+  arxivid       = {1811.00075}
+}
+
+@Article{Cai24arxiv,
+  author        = {Yifu Cai and Arjun Choudhry and Mononito Goswami and Artur
+                  Dubrawski},
+  title         = {{TimeSeriesExam}: A Time Series Understanding Exam},
+  journal       = arxiv,
+  year          = 2024,
+  month         = oct,
+  primaryclass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2410.14752},
+  arxivid       = {2410.14752}
+}
+
+@Article{Chan24scidata,
+  author        = {Shing Chan and Yuan Hang and Catherine Tong and Aidan Acquah
+                  and Abram Schonfeldt and Jonathan Gershuny and Aiden Doherty},
+  title         = {{CAPTURE-24}: A Large Dataset of Wrist-Worn Activity Tracker
+                  Data Collected in the Wild for Human Activity Recognition},
+  journal       = scidata,
+  year          = 2024,
+  volume        = 11,
+  pages         = 1264,
+  month         = oct,
+  doi           = {10.1038/s41597-024-03960-3}
+}
+
+@Article{Chen26arxiv,
+  author        = {Yuliang Chen and Arvind Pillai and Yu Yvonne Wu and Tess Z.
+                  Griffin and Lisa Marsch and Michael V. Heinz and Nicholas C.
+                  Jacobson and Andrew Campbell},
+  title         = {Learning Transferable Sensor Models via Language-Informed
+                  Pretraining},
+  journal       = arxiv,
+  year          = 2026,
+  month         = mar,
+  primaryclass  = {cs.AI},
+  url           = {https://arxiv.org/abs/2603.11950},
+  arxivid       = {2603.11950}
+}
+
+@Article{Dau19jas,
+  author        = {Hoang Anh Dau and Anthony Bagnall and Kaveh Kamgar and
+                  Chin-Chia Michael Yeh and Yan Zhu and Shaghayegh Gharghabi and
+                  Chotirat Ann Ratanamahatana and Eamonn Keogh},
+  title         = {The {UCR} Time Series Archive},
+  journal       = jas,
+  year          = 2019,
+  volume        = 6,
+  number        = 6,
+  pages         = {1293--1305},
+  doi           = {10.1109/JAS.2019.1911747}
+}
+
+@InProceedings{Deng09cvpr,
+  author        = {Jia Deng and Wei Dong and Richard Socher and Li-Jia Li and
+                  Kai Li and Li Fei-Fei},
+  title         = {{ImageNet}: A Large-Scale Hierarchical Image Database},
+  booktitle     = cvpr,
+  year          = 2009,
+  pages         = {248--255},
+  month         = jun,
+  doi           = {10.1109/CVPR.2009.5206848}
+}
+
+@InProceedings{Godahewa21nipsdb,
+  author        = {Rakshitha Godahewa and Christoph Bergmeir and Geoffrey I.
+                  Webb and Rob J. Hyndman and Pablo Montero-Manso},
+  title         = {{Monash} Time Series Forecasting Archive},
+  booktitle     = nipsdb,
+  year          = 2021,
+  volume        = 1,
+  url           = {https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/eddea82ad2755b24c4e168c5fc2ebd40-Abstract-round2.html}
+}
+
+@InProceedings{Goswami24icml,
+  author        = {Mononito Goswami and Konrad Szafer and Arjun Choudhry and
+                  Yifu Cai and Shuo Li and Artur Dubrawski},
+  title         = {{MOMENT}: A Family of Open Time-Series Foundation Models},
+  booktitle     = icml,
+  year          = 2024,
+  volume        = 235,
+  pages         = {16115--16152},
+  url           = {https://proceedings.mlr.press/v235/goswami24a.html},
+  arxivid       = {2402.03885}
+}
+
+@InProceedings{Gu25icml,
+  author        = {Shuqi Gu and Chuyue Li and Baoyu Jing and Kan Ren},
+  title         = {{VerbalTS}: Generating Time Series from Texts},
+  booktitle     = icml,
+  year          = 2025,
+  volume        = 267,
+  pages         = {20448--20476},
+  url           = {https://proceedings.mlr.press/v267/gu25a.html}
+}
+
+@Article{Herzen22jmlr,
+  author        = {Julien Herzen and Francesco L{\"a}ssig and Samuele Giuliano
+                  Piazzetta and Thomas Neuer and L{\'e}o Tafti and Guillaume
+                  Raille and Tomas Van Pottelbergh and Marek Pasieka and Andrzej
+                  Skrodzki and Nicolas Huguenin and Maxime Dumonal and Jan
+                  Ko{\'s}cisz and Dennis Bader and Fr{\'e}d{\'e}rick Gusset and
+                  Mounir Benheddi and Camila Williamson and Michal Kosinski and
+                  Matej Petrik and Ga{\"e}l Grosch},
+  title         = {{Darts}: User-Friendly Modern Machine Learning for Time
+                  Series},
+  journal       = jmlr,
+  year          = 2022,
+  volume        = 23,
+  number        = 124,
+  pages         = {1--6},
+  url           = {http://jmlr.org/papers/v23/21-1177.html}
+}
+
+@Article{Kemp00tbme,
+  author        = {Bob Kemp and Aeilko H. Zwinderman and Bert Tuk and Hilbert A.
+                  C. Kamphuisen and Josefien J. L. Oberye},
+  title         = {Analysis of a Sleep-Dependent Neuronal Feedback Loop: The
+                  Slow-Wave Microcontinuity of the {EEG}},
+  journal       = tbme,
+  year          = 2000,
+  volume        = 47,
+  number        = 9,
+  pages         = {1185--1194},
+  month         = sep,
+  doi           = {10.1109/10.867928}
+}
+
+@Article{Langer25arxiv,
+  author        = {Patrick Langer and Thomas Kaar and Max Rosenblattl and
+                  Maxwell A. Xu and Winnie Chow and Martin Maritsch and Aradhana
+                  Verma and Brian Han and Daniel Seung Kim and Henry Chubb and
+                  Scott Ceresnak and Aydin Zahedivash and Alexander Tarlochan
+                  Singh Sandhu and Fatima Rodriguez and Daniel McDuff and Elgar
+                  Fleisch and Oliver Aalami and Filipe Barata and Paul
+                  Schmiedmayer},
+  title         = {{OpenTSLM}: Time-Series Language Models for Reasoning over
+                  Multivariate Medical Text- and Time-Series Data},
+  journal       = arxiv,
+  year          = 2025,
+  month         = oct,
+  primaryclass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2510.02410},
+  arxivid       = {2510.02410}
+}
+
+@InProceedings{Lansing22oceans,
+  author        = {Carina Lansing and Maxwell Levin and Chitra Sivaraman and
+                  Rebecca Fao and Frederick Driscoll},
+  title         = {{Tsdat}: An Open-Source Data Standardization Framework for
+                  Marine Energy and Beyond},
+  booktitle     = oceans,
+  year          = 2022,
+  address       = {San Diego, CA, USA},
+  doi           = {10.23919/OCEANS44145.2021.9706101}
+}
+
+@Article{Li26arxiv,
+  author        = {Sirui Li and Shuhan Xiao and Mihir Joshi and Ahmed Metwally
+                  and Daniel McDuff and Wei Wang and Yuzhe Yang},
+  title         = {{HEARTS}: Benchmarking {LLM} Reasoning on Health Time Series},
+  journal       = arxiv,
+  year          = 2026,
+  month         = mar,
+  primaryclass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2603.06638},
+  arxivid       = {2603.06638}
+}
+
+@Article{Liu24arxiv,
+  author        = {Ruoqi Liu and Yuelin Bai and Xiang Yue and Ping Zhang},
+  title         = {Teach Multimodal {LLM}s to Comprehend Electrocardiographic
+                  Images},
+  journal       = arxiv,
+  year          = 2024,
+  month         = oct,
+  primaryclass  = {cs.CV},
+  url           = {https://arxiv.org/abs/2410.19008},
+  arxivid       = {2410.19008}
+}
+
+@InProceedings{Liu24icml,
+  author        = {Yong Liu and Haoran Zhang and Chenyu Li and Xiangdong Huang
+                  and Jianmin Wang and Mingsheng Long},
+  title         = {{Timer}: Generative Pre-Trained Transformers Are Large Time
+                  Series Models},
+  booktitle     = icml,
+  year          = 2024,
+  volume        = 235,
+  pages         = {32369--32399},
+  url           = {https://proceedings.mlr.press/v235/liu24cb.html}
+}
+
+@InProceedings{Liu24nipsdb,
+  author        = {Haoxin Liu and Shangqing Xu and Zhiyuan Zhao and Lingkai Kong
+                  and Harshavardhan Kamarthi and Aditya B. Sasanur and Megha
+                  Sharma and Jiaming Cui and Qingsong Wen and Chao Zhang and B.
+                  Aditya Prakash},
+  title         = {{Time-MMD}: Multi-Domain Multimodal Dataset for Time Series
+                  Analysis},
+  booktitle     = nipsdb,
+  year          = 2024,
+  volume        = 37,
+  doi           = {10.52202/079017-2476},
+  url           = {https://proceedings.neurips.cc/paper_files/paper/2024/hash/8e7768122f3eeec6d77cd2b424b72413-Abstract-Datasets_and_Benchmarks_Track.html}
+}
+
+@Article{Loning19arxiv,
+  author        = {Markus L{\"o}ning and Anthony Bagnall and Sajaysurya Ganesh
+                  and Viktor Kazakov and Jason Lines and Franz J. Kir{\'a}ly},
+  title         = {{sktime}: A Unified Interface for Machine Learning with Time
+                  Series},
+  journal       = arxiv,
+  year          = 2019,
+  month         = sep,
+  primaryclass  = {cs.LG},
+  url           = {https://arxiv.org/abs/1909.07872},
+  arxivid       = {1909.07872}
+}
+
+@Article{Messica26arxiv,
+  author        = {Shvat Messica and Jiawen Zhang and Kevin Li and Theodoros
+                  Tsiligkaridis and Marinka Zitnik},
+  title         = {Adaptive Time Series Reasoning via Segment Selection},
+  journal       = arxiv,
+  year          = 2026,
+  month         = feb,
+  primaryclass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2602.18645},
+  arxivid       = {2602.18645}
+}
+
+@Article{Miller95cacm,
+  author        = {George A. Miller},
+  title         = {{WordNet}: A Lexical Database for {English}},
+  journal       = cacm,
+  year          = 1995,
+  volume        = 38,
+  number        = 11,
+  pages         = {39--41},
+  month         = nov,
+  doi           = {10.1145/219717.219748}
+}
+
+@Article{Narayanswamy26arxiv,
+  author        = {Girish Narayanswamy and Maxwell A. Xu and A. Ali Heydari and
+                  Samy Abdel-Ghaffar and Marius Guerard and Kara Vaillancourt
+                  and Zhihan Zhang and Jake Garrison and Levi Albuquerque and
+                  Dimitris Spathis and Hong Yu and Hamid Palangi and Xuhai Xu
+                  and David G. T. Barrett and Joseph Breda and Jed McGiffin and
+                  Yubin Kim and Yuwei Zhang and Naghmeh Rezaei and Samuel
+                  Solomon and Karan Ahuja and Tim Althoff and Jake Sunshine and
+                  Ming-Zher Poh and Benjamin Yetton and Ari Winbush and Nicholas
+                  B. Allen and James M. Rehg and Isaac Galatzer-Levy and Yun Liu
+                  and John Hernandez and Anupam Pathak and Conor Heneghan and
+                  Yuzhe Yang and Ahmed A. Metwally and Pushmeet Kohli and Mark
+                  Malhotra and Shwetak Patel and Xin Liu and Daniel McDuff},
+  title         = {Towards a General Intelligence and Interface for Wearable
+                  Health Data},
+  journal       = arxiv,
+  year          = 2026,
+  month         = may,
+  primaryclass  = {cs.AI},
+  url           = {https://arxiv.org/abs/2605.22759},
+  arxivid       = {2605.22759}
+}
+
+@InProceedings{Oh23nipsdb,
+  author        = {Jungwoo Oh and Gyubok Lee and Seongsu Bae and Joon-myoung
+                  Kwon and Edward Choi},
+  title         = {{ECG-QA}: A Comprehensive Question Answering Dataset Combined
+                  with Electrocardiogram},
+  booktitle     = nipsdb,
+  year          = 2023,
+  volume        = 36,
+  pages         = {66277--66288}
+}
+
+@Article{Oh26arxiv,
+  author        = {Jungwoo Oh and Hyunseung Chung and Junhee Lee and Min-Gyu Kim
+                  and Hangyul Yoon and Ki Seong Lee and Youngchae Lee and Muhan
+                  Yeo and Edward Choi},
+  title         = {{ECG-Reasoning-Benchmark}: A Benchmark for Evaluating
+                  Clinical Reasoning Capabilities in {ECG} Interpretation},
+  journal       = arxiv,
+  year          = 2026,
+  month         = mar,
+  primaryclass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2603.14326},
+  arxivid       = {2603.14326}
+}
+
+@Article{Paparrizos22pvldb,
+  author        = {John Paparrizos and Yuhao Kang and Paul Boniol and Ruey S.
+                  Tsay and Themis Palpanas and Michael J. Franklin},
+  title         = {{TSB-UAD}: An End-to-End Benchmark Suite for Univariate
+                  Time-Series Anomaly Detection},
+  journal       = pvldb,
+  year          = 2022,
+  volume        = 15,
+  number        = 8,
+  pages         = {1697--1711},
+  url           = {https://www.vldb.org/pvldb/vol15/p1697-paparrizos.pdf}
+}
+
+@Article{Qiu25arxiv,
+  author        = {Jiaxing Qiu and Dongliang Guo and Brynne Sullivan and Teague
+                  R. Henry and Tom Hartvigsen},
+  title         = {Instruction-Based Time Series Editing},
+  journal       = arxiv,
+  year          = 2025,
+  month         = aug,
+  primaryclass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2508.01504},
+  arxivid       = {2508.01504}
+}
+
+@Article{Shchur25arxiv,
+  author        = {Oleksandr Shchur and Abdul Fatir Ansari and Caner Turkmen and
+                  Lorenzo Stella and Nick Erickson and Pablo Guerron and Michael
+                  Bohlke-Schneider and Yuyang Wang},
+  title         = {{fev-bench}: A Realistic Benchmark for Time Series
+                  Forecasting},
+  journal       = arxiv,
+  year          = 2025,
+  month         = sep,
+  primaryclass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2509.26468},
+  arxivid       = {2509.26468}
+}
+
+@InProceedings{Sheynin24cvpr,
+  author        = {Shelly Sheynin and Adam Polyak and Uriel Singer and Yuval
+                  Kirstain and Amit Zohar and Oron Ashual and Devi Parikh and
+                  Yaniv Taigman},
+  title         = {{Emu Edit}: Precise Image Editing via Recognition and
+                  Generation Tasks},
+  booktitle     = cvpr,
+  year          = 2024,
+  pages         = {8871--8879},
+  month         = jun,
+  doi           = {10.1109/CVPR52733.2024.00847}
+}
+
+@Article{Shuai26arxiv,
+  author        = {Zitao Shuai and Zongzhe Xu and Yuntian Wu and Sirui Li and
+                  Tianhong Li and Yuzhe Yang},
+  title         = {Signal or Noise? {U}nderstanding Generative Models for
+                  Real-World Sensor Time Series},
+  journal       = arxiv,
+  year          = 2026,
+  month         = jul,
+  primaryclass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2607.04245},
+  arxivid       = {2607.04245}
+}
+
+@Article{Wagner20scidata,
+  author        = {Patrick Wagner and Nils Strodthoff and Ralf-Dieter Bousseljot
+                  and Dieter Kreiseler and Fatima Lunze and Wojciech Samek and
+                  Tobias Schaeffter},
+  title         = {{PTB-XL}, a Large Publicly Available Electrocardiography
+                  Dataset},
+  journal       = scidata,
+  year          = 2020,
+  volume        = 7,
+  pages         = 154,
+  month         = may,
+  doi           = {10.1038/s41597-020-0495-6}
+}
+
+@InProceedings{Woo24icml,
+  author        = {Gerald Woo and Chenghao Liu and Akshat Kumar and Caiming
+                  Xiong and Silvio Savarese and Doyen Sahoo},
+  title         = {Unified Training of Universal Time Series Forecasting
+                  Transformers},
+  booktitle     = icml,
+  year          = 2024,
+  volume        = 235,
+  pages         = {53140--53164},
+  url           = {https://proceedings.mlr.press/v235/woo24a.html}
+}
+
+@Article{Wu24arxiv,
+  author        = {Chengyue Wu and Xiaokang Chen and Zhiyu Wu and Yiyang Ma and
+                  Xingchao Liu and Zizheng Pan and Wen Liu and Zhenda Xie and
+                  Xingkai Yu and Chong Ruan and Ping Luo},
+  title         = {{Janus}: Decoupling Visual Encoding for Unified Multimodal
+                  Understanding and Generation},
+  journal       = arxiv,
+  year          = 2024,
+  month         = oct,
+  primaryclass  = {cs.CV},
+  url           = {https://arxiv.org/abs/2410.13848},
+  arxivid       = {2410.13848}
+}
+
+@Article{Wu26arxiv,
+  author        = {John Wu and Yongda Fan and Zhenbang Wu and Paul Landes and
+                  Eric Schrock and Sayeed Sajjad Razin and Arjun Chatterjee and
+                  Naveen Baskaran and Joshua Steier and Andrea Fitzpatrick and
+                  Bilal Arif and Rian Atri and Jathurshan Pradeepkumar and
+                  Siddhartha Laghuvarapu and Junyi Gao and Adam R. Cross and
+                  Jimeng Sun},
+  title         = {{PyHealth 2.0}: A Comprehensive Open-Source Toolkit for
+                  Accessible and Reproducible Clinical Deep Learning},
+  journal       = arxiv,
+  year          = 2026,
+  month         = jan,
+  primaryclass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2601.16414},
+  arxivid       = {2601.16414}
+}
+
+@Article{Xie26arxiv,
+  author        = {Stephan Xie and Ben Cohen and Mononito Goswami and Junhong
+                  Shen and Emaad Khwaja and Chenghao Liu and David Asker and
+                  Othmane Abou-Amal and Ameet Talwalkar},
+  title         = {{ARFBench}: Benchmarking Time Series Question Answering
+                  Ability for Software Incident Response},
+  journal       = arxiv,
+  year          = 2026,
+  month         = apr,
+  primaryclass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2604.21199},
+  arxivid       = {2604.21199}
+}
+
+@Article{Xu25arxiv,
+  author        = {Maxwell A. Xu and Girish Narayanswamy and Kumar Ayush and
+                  Dimitris Spathis and Shun Liao and Shyam A. Tailor and Ahmed
+                  Metwally and A. Ali Heydari and Yuwei Zhang and Jake Garrison
+                  and Samy Abdel-Ghaffar and Xuhai Xu and Ken Gu and Jacob
+                  Sunshine and Ming-Zher Poh and Yun Liu and Tim Althoff and
+                  Shrikanth Narayanan and Pushmeet Kohli and Mark Malhotra and
+                  Shwetak Patel and Yuzhe Yang and James M. Rehg and Xin Liu and
+                  Daniel McDuff},
+  title         = {{LSM-2}: Learning from Incomplete Wearable Sensor Data},
+  journal       = arxiv,
+  year          = 2025,
+  month         = jun,
+  primaryclass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2506.05321},
+  arxivid       = {2506.05321}
+}
+
+@Article{Xu26arxiv,
+  author        = {Zongzhe Xu and Zitao Shuai and Eideen Mozaffari and Ravi S.
+                  Aysola and Rajesh Kumar and Yuzhe Yang},
+  title         = {{SleepLM}: Natural-Language Intelligence for Human Sleep},
+  journal       = arxiv,
+  year          = 2026,
+  month         = feb,
+  primaryclass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2602.23605},
+  arxivid       = {2602.23605}
+}
+
+@InProceedings{Yeche21nipsdb,
+  author        = {Hugo Y{\`e}che and Rita Kuznetsova and Marc Zimmermann and
+                  Matthias H{\"u}ser and Xinrui Lyu and Martin Faltys and Gunnar
+                  R{\"a}tsch},
+  title         = {{HiRID-ICU-Benchmark}: A Comprehensive Machine Learning
+                  Benchmark on High-Resolution {ICU} Data},
+  booktitle     = nipsdb,
+  year          = 2021,
+  url           = {https://arxiv.org/abs/2111.08536},
+  arxivid       = {2111.08536}
+}
+
+@Article{Yu26arxiv,
+  author        = {Fangxu Yu and Xingang Guo and Lingzhi Yuan and Haoqiang Kang
+                  and Hongyu Zhao and Lianhui Qin and Furong Huang and Bin Hu
+                  and Tianyi Zhou},
+  title         = {{TSRBench}: A Comprehensive Multi-Task Multi-Modal Time
+                  Series Reasoning Benchmark for Generalist Models},
+  journal       = arxiv,
+  year          = 2026,
+  month         = jan,
+  primaryclass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2601.18744},
+  arxivid       = {2601.18744}
+}
+
+@Article{Yuan24npjdm,
+  author        = {Hang Yuan and Shing Chan and Andrew P. Creagh and Catherine
+                  Tong and Aidan Acquah and David A. Clifton and Aiden Doherty},
+  title         = {Self-Supervised Learning for Human Activity Recognition Using
+                  700,000 Person-Days of Wearable Data},
+  journal       = npjdm,
+  year          = 2024,
+  volume        = 7,
+  number        = 1,
+  pages         = 91,
+  doi           = {10.1038/s41746-024-01062-3}
+}
+
+@InProceedings{Zhang25nips,
+  author        = {Yuwei Zhang and Kumar Ayush and Siyuan Qiao and A. Ali
+                  Heydari and Girish Narayanswamy and Maxwell A. Xu and Ahmed
+                  Metwally and Jinhua Xu and Jake Garrison and Xuhai Xu and Tim
+                  Althoff and Yun Liu and Pushmeet Kohli and Jiening Zhan and
+                  Mark Malhotra and Shwetak Patel and Cecilia Mascolo and Xin
+                  Liu and Daniel McDuff and Yuzhe Yang},
+  title         = {{SensorLM}: Learning the Language of Wearable Sensors},
+  booktitle     = nips,
+  year          = 2025,
+  volume        = 38,
+  pages         = {46813--46849},
+  doi           = {10.52202/085713-1559},
+  url           = {https://proceedings.neurips.cc/paper_files/paper/2025/file/42cd98f0e7520d4a63c34891ac1c972f-Paper-Conference.pdf}
+}
+
+@Article{Zhang26arxiv,
+  author        = {Junru Zhang and Lang Feng and Haoran Shi and Xu Guo and Han
+                  Yu and Yabo Dong and Duanqing Xu},
+  title         = {{AnomSeer}: Reinforcing Multimodal {LLM}s to Reason for
+                  Time-Series Anomaly Detection},
+  journal       = arxiv,
+  year          = 2026,
+  month         = feb,
+  primaryclass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2602.08868},
+  arxivid       = {2602.08868}
+}
+
+@Article{Zhou26arxiv,
+  author        = {Jiahui Zhou and Dan Li and Boxin Li and Xiao Zhang and Erli
+                  Meng and Lin Li and Zhuomin Chen and Jian Lou and See-Kiong
+                  Ng},
+  title         = {Time Series Reasoning via Process-Verifiable Thinking Data
+                  Synthesis and Scheduling for Tailored {LLM} Reasoning},
+  journal       = arxiv,
+  year          = 2026,
+  month         = feb,
+  primaryclass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2602.07830},
+  arxivid       = {2602.07830}
+}
+
+@Article{Zumarraga26arxiv,
+  author        = {Nicolas Zumarraga and Lorenzo Steno and Ning Wang and Max
+                  Rosenblattl and Thomas Kaar and Maxwell A. Xu and Kevin
+                  O'Sullivan and Markus Kreft and Elgar Fleisch and Paul
+                  Schmiedmayer and Patrick Langer and Robert Jakob},
+  title         = {{TimeRLM}: Recursive Language Models Enable Precise Anomaly
+                  Localization in Long-Context Time-Series},
+  journal       = arxiv,
+  year          = 2026,
+  month         = aug,
+  primaryclass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2608.03391},
+  arxivid       = {2608.03391}
+}
+
+@InProceedings{Zumarraga26iclrw,
+  author        = {Nicolas Zumarraga and Thomas Kaar and Ning Wang and Maxwell
+                  A. Xu and Max Rosenblattl and Markus Kreft and Kevin
+                  O'Sullivan and Paul Schmiedmayer and Patrick Langer and Robert
+                  Jakob},
+  title         = {{TS-Haystack}: A Multi-Scale Retrieval Benchmark for Time
+                  Series Language Models},
+  booktitle     = iclrw,
+  year          = 2026,
+  note          = {Workshop on Time Series in the Age of Large Models},
+  url           = {https://openreview.net/forum?id=vGMayMuH83}
+}
+
