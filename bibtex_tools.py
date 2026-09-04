@@ -16,6 +16,7 @@ class Block:
     entry_type: str
     body: str
     line: int
+    raw: str | None = None
 
 
 @dataclass(frozen=True)
@@ -84,7 +85,9 @@ def scan_blocks(text: str) -> tuple[list[Block], list[str]]:
             )
             break
 
-        blocks.append(Block(entry_type, text[body_start:cursor], line))
+        blocks.append(
+            Block(entry_type, text[body_start:cursor], line, text[marker : cursor + 1])
+        )
         position = cursor + 1
 
     return blocks, problems
