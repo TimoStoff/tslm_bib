@@ -190,6 +190,7 @@ macro=Full Crossref Venue Name
 | --- | --- |
 | `all.bib` | Stores the venue macros and bibliography entries. |
 | `IEEEtran.bst` | Renders the bibliography in the IEEE style. |
+| `LICENSE` | Contains the MIT license for the original repository work. |
 | `AGENTS.md` | Gives coding agents the repository rules and safe commands. |
 | `options.rsc` | Defines the BibTool normalization and field order. |
 | `check_library.py` | Validates the library. |
@@ -204,6 +205,11 @@ macro=Full Crossref Venue Name
 | `tests/` | Contains the tool tests. |
 | `.gitignore` | Excludes generated and local files. |
 | `.github/workflows/library.yml` | Validates the current tree and each pull request commit. |
+
+## License
+
+The original work in this repository uses the [MIT License](LICENSE).
+`IEEEtran.bst` is a third-party file and retains the license notice inside that file.
 
 ## Contribute with stacked pull requests
 
