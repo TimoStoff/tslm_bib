@@ -31,6 +31,7 @@ Copy `all.bib` into that tree before submission instead of using an external pat
 | --- | --- |
 | `all.bib` | Stores the venue macros and bibliography entries. |
 | `IEEEtran.bst` | Renders the bibliography in the IEEE style. |
+| `AGENTS.md` | Gives coding agents the repository rules and safe commands. |
 | `options.rsc` | Defines the BibTool normalization and field order. |
 | `check_library.py` | Validates BibTeX syntax, keys, fields, macros, months, and entry order. |
 | `bibtex_tools.py` | Provides the parser used by the Python tools. |
@@ -40,7 +41,7 @@ Copy `all.bib` into that tree before submission instead of using an external pat
 | `all_bib_doc.tex` | Renders every entry for visual review. |
 | `Makefile` | Provides the build, validation, formatting, and cleanup targets. |
 | `pyproject.toml` and `uv.lock` | Define a dependency-free Python environment for `uv`. |
-| `tests/test_tools.py` | Covers important parser, validator, and DOI-import behavior. |
+| `tests/` | Covers important parser, validator, and DOI-import behavior. |
 | `.gitignore` | Excludes LaTeX output and local scratch files. |
 | `.github/workflows/library.yml` | Validates the current tree and every commit in a pull request. |
 
