@@ -1,0 +1,100 @@
+jmlr=Journal of Machine Learning Research
+tmlr=Transactions on Machine Learning Research
+pami=IEEE Transactions on Pattern Analysis and Machine Intelligence
+tnnls=IEEE Transactions on Neural Networks and Learning Systems
+ijcv=International Journal of Computer Vision
+ml=Machine Learning
+nn=Neural Networks
+neco=Neural Computation
+
+dmkd=Data Mining and Knowledge Discovery
+tkde=IEEE Transactions on Knowledge and Data Engineering
+pvldb=Proceedings of the VLDB Endowment
+vldbj=The VLDB Journal
+tods=ACM Transactions on Database Systems
+ijf=International Journal of Forecasting
+jasa=Journal of the American Statistical Association
+jas=IEEE/CAA Journal of Automatica Sinica
+tsp=IEEE Transactions on Signal Processing
+
+cl=Computational Linguistics
+tacl=Transactions of the Association for Computational Linguistics
+taslp=IEEE/ACM Transactions on Audio, Speech, and Language Processing
+
+tbme=IEEE Transactions on Biomedical Engineering
+jbhi=IEEE Journal of Biomedical and Health Informatics
+npjdm=npj Digital Medicine
+jamia=Journal of the American Medical Informatics Association
+natmed=Nature Medicine
+natbme=Nature Biomedical Engineering
+lancetdh=The Lancet Digital Health
+physmeas=Physiological Measurement
+imwut=Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies
+
+nature=Nature
+science=Science
+natmi=Nature Machine Intelligence
+natcomm=Nature Communications
+scidata=Scientific Data
+pnas=Proceedings of the National Academy of Sciences
+
+cacm=Communications of the ACM
+acmcs=ACM Computing Surveys
+tois=ACM Transactions on Information Systems
+ieee=Proceedings of the IEEE
+computer=Computer
+
+icml=International Conference on Machine Learning
+icmlw=International Conference on Machine Learning Workshops
+nips=Advances in Neural Information Processing Systems
+nipsdb=Neural Information Processing Systems Datasets and Benchmarks Track
+nipsw=Neural Information Processing Systems Workshops
+iclr=International Conference on Learning Representations
+iclrw=International Conference on Learning Representations Workshops
+aistats=International Conference on Artificial Intelligence and Statistics
+colm=Conference on Language Modeling
+aaai=AAAI Conference on Artificial Intelligence
+ijcai=International Joint Conference on Artificial Intelligence
+uai=Conference on Uncertainty in Artificial Intelligence
+ijcnn=International Joint Conference on Neural Networks
+
+acl=Annual Meeting of the Association for Computational Linguistics
+emnlp=Conference on Empirical Methods in Natural Language Processing
+naacl=Conference of the North American Chapter of the Association for Computational Linguistics
+coling=International Conference on Computational Linguistics
+interspeech=INTERSPEECH
+
+cvpr=Conference on Computer Vision and Pattern Recognition
+cvprw=Conference on Computer Vision and Pattern Recognition Workshops
+iccv=International Conference on Computer Vision
+eccv=European Conference on Computer Vision
+wacv=Winter Conference on Applications of Computer Vision
+bmvc=British Machine Vision Conference
+
+kdd=ACM SIGKDD International Conference on Knowledge Discovery and Data Mining
+icdm=IEEE International Conference on Data Mining
+sdm=SIAM International Conference on Data Mining
+icde=IEEE International Conference on Data Engineering
+sigmod=ACM SIGMOD International Conference on Management of Data
+vldb=International Conference on Very Large Data Bases
+cikm=ACM International Conference on Information and Knowledge Management
+wsdm=ACM International Conference on Web Search and Data Mining
+sigir=ACM SIGIR Conference on Research and Development in Information Retrieval
+www=The Web Conference
+
+mlhc=Machine Learning for Healthcare Conference
+chil=ACM Conference on Health, Inference, and Learning
+miccai=International Conference on Medical Image Computing and Computer-Assisted Intervention
+embc=Annual International Conference of the IEEE Engineering in Medicine and Biology Society
+cinc=Computing in Cardiology
+amia=AMIA Annual Symposium
+
+icassp=IEEE International Conference on Acoustics, Speech and Signal Processing
+ubicomp=ACM International Joint Conference on Pervasive and Ubiquitous Computing
+percom=IEEE International Conference on Pervasive Computing and Communications
+sensys=ACM Conference on Embedded Networked Sensor Systems
+ipsn=ACM/IEEE International Conference on Information Processing in Sensor Networks
+chi=ACM Conference on Human Factors in Computing Systems
+oceans=OCEANS
+
+pmlr=Proceedings of Machine Learning Research

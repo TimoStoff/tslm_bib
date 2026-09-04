@@ -1,0 +1,9 @@
+[project]
+name = "tslm-bib-tools"
+version = "0.1.0"
+description = "Local tools for the TSLM BibTeX library"
+requires-python = ">=3.9"
+dependencies = []
+
+[tool.uv]
+package = false
