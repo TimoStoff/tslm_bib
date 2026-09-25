@@ -16,8 +16,10 @@ jobs:
         with:
           python-version: "3.9"
       - name: Validate the library
+        working-directory: bib
         run: ./check_library.py
       - name: Run the unit tests
+        working-directory: bib
         run: python -m unittest discover -s tests -v
 
   pull-request-commits:
@@ -40,5 +42,5 @@ jobs:
           for commit in $(git rev-list --reverse "$merge_base..HEAD"); do
             echo "Validating $commit"
             git checkout --detach "$commit"
-            ./check_library.py
+            (cd bib && ./check_library.py)
           done

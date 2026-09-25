@@ -1,6 +1,6 @@
 # Agent instructions
 
-These instructions apply to the complete repository.
+These instructions apply to the bibliography project under `bib/`.
 
 ## Protect the library
 
